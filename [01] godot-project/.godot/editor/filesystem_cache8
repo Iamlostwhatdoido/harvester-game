@@ -1,0 +1,44 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1690583830
+default_env.tres::Environment::-1::1690583817::0::1::::<><>::
+icon.png::CompressedTexture2D::8460954132110945235::1654517073::1690583928::1::::<><>::
+::res://Assets/::1655402406
+::res://Assets/Environment/::1655402406
+::res://Assets/Materials/::1654763535
+Blue.tres::StandardMaterial3D::-1::1690583818::0::1::::<><>::
+Green.tres::StandardMaterial3D::-1::1690583818::0::1::::<><>::
+LightBlue.tres::StandardMaterial3D::-1::1690583818::0::1::::<><>::
+Red.tres::StandardMaterial3D::-1::1690583818::0::1::::<><>::
+VisionAlly.tres::StandardMaterial3D::-1::1690583818::0::1::::<><>::
+VisionEnemy.tres::StandardMaterial3D::-1::1690583818::0::1::::<><>::
+VisionMain.tres::StandardMaterial3D::-1::1690583818::0::1::::<><>::
+VisionSpecial.tres::StandardMaterial3D::-1::1690583818::0::1::::<><>::
+VisionTarget.tres::StandardMaterial3D::-1::1690583818::0::1::::<><>::
+::res://Assets/Mesh/::1658426254
+Cube1.obj::Mesh::1729008083443070272::1654518383::1690583929::1::::<><>::
+Cube2.obj::Mesh::6299913190557773861::1654518479::1690583929::1::::<><>::
+Material.material::StandardMaterial3D::-1::1655384677::0::1::::<><>::
+Plane2.obj::Mesh::9153986732059883634::1654518453::1690583929::1::::<><>::
+Plane10.obj::Mesh::7849197565040596431::1654518532::1690583929::1::::<><>::
+Plane30.obj::Mesh::3005940428534701555::1654518562::1690583929::1::::<><>::
+::res://Scenes/::1656012657
+Main.tscn::PackedScene::-1::1690583817::0::1::::<><>::res://Scenes/Statics/Plane 30x30.tscn<>res://Scenes/Statics/Cube 1x1.tscn<>res://Scenes/Kinematics/Player.tscn
+set_vision.gd::GDScript::-1::1690583817::0::1::::<>StaticBody3D<>::
+::res://Scenes/Kinematics/::1656012658
+FaceCamPos.gd::GDScript::-1::1690583817::0::1::::<>Marker3D<>::
+Player.gd::GDScript::-1::1690583817::0::1::::<>CharacterBody3D<>::
+Player.tscn::PackedScene::-1::1656012658::0::1::::<><>::res://Skeletons/xbot.fbx<>res://Scenes/Kinematics/Player.gd<>res://Scenes/Kinematics/SpringArm.gd<>res://Assets/Materials/Blue.tres<>res://Assets/Materials/Green.tres<>res://Assets/Materials/Red.tres<>res://Scenes/Kinematics/FaceCamPos.gd<>res://Skeletons/Beta_Joints_MAT.material<>res://Skeletons/asdf1Beta_HighLimbsGeoSG2.material<>res://Scenes/Kinematics/PlayerCam.gd
+PlayerCam.gd::GDScript::-1::1690583818::0::1::::<>Camera3D<>::
+SpringArm.gd::GDScript::-1::1690583818::0::1::::<>SpringArm3D<>::
+::res://Scenes/Statics/::1655402674
+Cube 1x1.tscn::PackedScene::-1::1690583817::0::1::::<><>::res://Assets/Materials/Red.tres<>res://Assets/Mesh/Cube1.obj<>res://Assets/Materials/VisionMain.tres<>res://Scenes/set_vision.gd
+Plane 30x30.tscn::PackedScene::-1::1690583817::0::1::::<><>::res://Assets/Materials/LightBlue.tres<>res://Assets/Mesh/Plane30.obj<>res://Scenes/set_vision.gd<>res://Assets/Materials/VisionMain.tres
+::res://Skeletons/::1654730005
+Alpha_Body_MAT.material::StandardMaterial3D::-1::1654517145::0::1::::<><>::
+Alpha_Joints_MAT.material::StandardMaterial3D::-1::1654517145::0::1::::<><>::
+asdf1Beta_HighLimbsGeoSG2.material::StandardMaterial3D::-1::1654517144::0::1::::<><>::
+Beta_Joints_MAT.material::StandardMaterial3D::-1::1654517144::0::1::::<><>::
+Standing Idle.fbx::PackedScene::7717351216279529970::1654729543::1690583932::1::::<><>::
+Standing Idle.gd::GDScript::-1::1690583817::0::1::::<>Node3D<>::
+xbot.fbx::PackedScene::4993671756965795227::1654517121::1690583934::1::::<><>::
+ybot.fbx::PackedScene::3194989416034986196::1654517099::1690583936::1::::<><>::

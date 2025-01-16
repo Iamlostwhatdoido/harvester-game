@@ -1,0 +1,98 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjdre62fp7eyg"]
+
+[ext_resource type="PackedScene" path="res://Scenes/Statics/Plane 30x30.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://Scenes/Statics/Cube 1x1.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://412ywat1wyqc" path="res://Scenes/Kinematics/Player.tscn" id="3"]
+
+[node name="Main" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.974975, 0.222314, 0, -0.222314, 0.974975, 0, 1.80478, 6.14934)
+cull_mask = 3
+
+[node name="Player" parent="." instance=ExtResource("3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.916503, 7.01101, -12.0707)
+mass = 120.0
+
+[node name="World" type="Node3D" parent="."]
+
+[node name="Plane 30x30" parent="World" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+
+[node name="Plane 30x31" parent="World" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, -0.5, 0)
+
+[node name="Cube 1x1" parent="World" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, -1)
+
+[node name="Cube 1x1#2" parent="World" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, -1)
+type = "target"
+
+[node name="Cube 1x1#3" parent="World" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.5, -1)
+
+[node name="Cube 1x1#4" parent="World" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.5, -1)
+type = "enemy"
+
+[node name="Cube 1x1#6" parent="World" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1.5, -1)
+type = "ally"
+
+[node name="Cube 1x1#7" parent="World" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.5, -1)
+type = "special"
+
+[node name="Plane 30x32" parent="World" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 30)
+
+[node name="Plane 30x33" parent="World" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, -0.5, 30)
+
+[node name="Plane 30x34" parent="World" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -30)
+
+[node name="Plane 30x35" parent="World" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, -0.5, -30)
+
+[node name="Plane 30x36" parent="World" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, -0.5, 0)
+
+[node name="Plane 30x37" parent="World" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, -0.5, 30)
+
+[node name="Plane 30x38" parent="World" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, -0.5, -30)
+
+[node name="Cube 1x1#8" parent="World" instance=ExtResource("2")]
+transform = Transform3D(6.27557, 0, 0, 0, 6.27557, 0, 0, 0, 6.27557, -6, 2.64289, -10.3703)
+
+[node name="Cube 1x1#9" parent="World" instance=ExtResource("2")]
+transform = Transform3D(-1.93969e-07, 1.93969e-07, 6.27557, 4.43749, 4.43749, 0, -4.43749, 4.43749, -2.74314e-07, 10.2888, -0.26041, -10.3703)
+
+[node name="Cube 1x1#10" parent="World" instance=ExtResource("2")]
+transform = Transform3D(-2.10136e-07, 1.76325e-07, 6.27557, 4.03386, 4.80736, 0, -4.80736, 4.03386, -2.74314e-07, 17.2888, -0.806094, -10.3703)
+
+[node name="Cube 1x1#11" parent="World" instance=ExtResource("2")]
+transform = Transform3D(-2.24705e-07, 1.5734e-07, 6.27557, 3.59952, 5.14064, 0, -5.14064, 3.59952, -2.74314e-07, 25.2888, -0.797627, -10.3703)
+
+[node name="Cube 1x1#12" parent="World" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 0.939693, -6.15636, 0, 0.34202, 16.9145, -7.75307, 2.17887, 0.733614)
+
+[node name="Cube 1x1#13" parent="World" instance=ExtResource("2")]
+transform = Transform3D(-4.37114e-08, 0.0871557, 11.9543, 0, 0.996195, -1.04587, -1, -3.8097e-09, -5.22541e-07, 2.52795, 3.58964, -10.4614)
+
+[node name="Lights" type="Node3D" parent="."]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.03954, 10.5921, 4.9494)
+omni_range = 32.6355
+
+[node name="OmniLight2" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.0521, 10.5921, 13.9778)
+omni_range = 32.6355
+
+[node name="OmniLight3" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.04231, 10.5921, -28.7014)
+omni_range = 32.6355

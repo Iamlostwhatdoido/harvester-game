@@ -1,0 +1,6 @@
+res://default_env.tres
+res://Scenes/Main.tscn
+res://Scenes/Kinematics/Player.gd
+res://Scenes/Kinematics/Player.tscn
+res://Scenes/Kinematics/PlayerCam.gd
+res://Scenes/Kinematics/FaceCamPos.gd
